@@ -1,7 +1,3 @@
-# A method to reverse the words in a sentence, in place.
-# Time complexity: O(n) where n is size of one word and m is number of words
-# Space complexity: O(1)
-
 def reverse_sentence(my_sentence)
   #STRING REVERSE
   #edge cases
@@ -18,7 +14,7 @@ def reverse_sentence(my_sentence)
     larger_index -= 1
   end
 
-  #REVERSE STRINGS IN EACH WORD
+  #REVERSE EACH WORD
   tracking_index = 0
 
   until tracking_index > my_sentence.length - 1
@@ -43,3 +39,6 @@ def reverse_sentence(my_sentence)
 
   return my_sentence
 end
+
+my_sentence = " hi  bye "
+puts reverse_sentence(my_sentence)
