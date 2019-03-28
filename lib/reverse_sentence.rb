@@ -1,7 +1,8 @@
 # A method to reverse the words in a sentence, in place.
-# Time complexity: ?
-# Space complexity: ?
+# Time complexity: O(n/2*m) where n is size of one word and m is number of words
+# Space complexity: O(n^2)
 
+#O(n/2) for time complexity
 def string_reverse(my_string)
   if my_string == nil || my_string == ""
     return nil
